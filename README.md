@@ -2,7 +2,13 @@
 
 ### react-native-ico-social-icons-rounded
 
-204 Icons
+369 Vector Icons for React Native
+
+<img src="./static/56-social-logo.png" alt="56-social-logo" width="150" height="150"> <img src="./static/ads-of-the-world-logo.png" alt="ads-of-the-world-logo" width="150" height="150"> <img src="./static/ads-scuttlepad-logo.png" alt="ads-scuttlepad-logo" width="150" height="150">
+
+## List of icons
+
+- [List of Social Icons Rounded Icons](http://ico.simpleness.org/pack/social-icons-rounded)
 
 ## Usage
 
@@ -22,10 +28,6 @@ render() {
 }
 
 ```
-
-## List of icons
-
-- [List of Social Icons Rounded Icons](http://ico.simpleness.org/pack/social-icons-rounded)
 
 ## Installation
 
@@ -61,7 +63,7 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of file | "56-social-logo"
+name | no |  | name of icon | "56-social-logo"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
