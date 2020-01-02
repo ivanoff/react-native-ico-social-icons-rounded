@@ -2,7 +2,7 @@
 
 ### react-native-ico-social-icons-rounded
 
-369 Vector Icons for React Native
+204 Vector Icons for React Native
 
 <img src="./static/56-social-logo.png" alt="56-social-logo" width="150" height="150"> <img src="./static/ads-of-the-world-logo.png" alt="ads-of-the-world-logo" width="150" height="150"> <img src="./static/ads-scuttlepad-logo.png" alt="ads-scuttlepad-logo" width="150" height="150">
 
@@ -23,6 +23,10 @@ render() {
           <Icon name="56-social-logo" />
           <Icon name="ads-of-the-world-logo" height="40" width="40" />
           <Icon name="ads-scuttlepad-logo" color="red" />
+          <Icon name="ads-of-the-world-logo" badge="10" />
+          <Icon name="ads-of-the-world-logo" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
+          <Icon name="56-social-logo" background="circle" />
+          <Icon name="56-social-logo" background={{ type: "button", color: 'green' }} />
         </>
     );
 }
@@ -57,7 +61,7 @@ cd ios && pod install && cd ..
 
 ## API
 
-### <Icon name [color width height ...rest] />
+### <Icon name [color width height background badge ...rest] />
 
 Returns a SvgXml icon by name and group.
 
@@ -67,6 +71,10 @@ name | no |  | name of icon | "56-social-logo"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
+background | no | | background type | "circle"
+background | no | | background object | {type: "circle", color: 'yellow'}
+badge | no | | badge string | "10"
+badge | no | | badge object | {value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}
 ...rest | no | | other props | style={{backgroundColor: "#00f"}}
 
 ## Icons Made by
