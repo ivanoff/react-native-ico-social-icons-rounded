@@ -1,5 +1,6 @@
 declare module 'react-native-ico-social-icons-rounded' {
     import { ReactNode } from 'react';
+    import { SvgProps, AdditionalProps } from 'react-native-svg';
 
     type iconNames = '500px-logo-1' |
       '500px-logo' |
@@ -237,7 +238,7 @@ declare module 'react-native-ico-social-icons-rounded' {
       badge?: number | string | badgeTypeObj;
     }
 
-    const Icon: (props: IconProps) => ReactNode;
+    const Icon: (props: IconProps & SvgProps & AdditionalProps) => ReactNode;
 
     export { iconNames };
     export default Icon;
